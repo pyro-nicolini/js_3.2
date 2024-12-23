@@ -11,9 +11,29 @@ body {
     align-items: center;
 }
 
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    background-color: rgba(186, 123, 5, 0.901);
+    margin: auto;
+    top: 0;
+    z-index: 1;
+    padding-bottom: .7rem;
+}
+
+a {
+    color: antiquewhite;
+}
+
 h1 {
     max-width: 600px;
-    padding: 1rem 2rem;
+    padding: .3rem 2rem;
     border-radius: 10px;
     background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
     text-shadow: 2px 2px 2px rgb(187, 114, 4);
@@ -37,7 +57,11 @@ input {
     text-align: center;
 }
 
-button {
+.btn1 {
+    padding: .7rem 2rem;
+}
+
+.btn1, .btn2 {
     font-family: "Silkscreen", serif;
     width: 10rem;
     height: 3rem;
@@ -52,7 +76,22 @@ button:hover {
     background: linear-gradient(rgb(238, 197, 32), rgb(107, 35, 1));
 }
 
-.parrafox {
+.status {
+    background: linear-gradient(rgb(255, 108, 108), rgb(192, 0, 0));
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.status2 {
+    background: linear-gradient(rgb(134, 244, 50), rgb(0, 47, 0));
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.parrafox2 {
     background: linear-gradient(rgb(165, 32, 98), rgb(61, 2, 98));
     color: rgb(255, 255, 255);
     padding: 1rem 2rem;
@@ -60,11 +99,77 @@ button:hover {
     border-radius: 10px;
 }
 
-.sec1 {
+
+#sec1 {
     height: 800px;
     width: 100%;
-    top: 10rem;
-    margin-top: 1rem;
+    margin-top: 150px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+article {
+    position: relative;
+    width: 400px;
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article img:first-child {
+    border-radius: 2rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+article img:last-child {
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+}
+
+article:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+article::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+article:hover::before {
+    opacity: 1;
+}
+
+article:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
+    
+}
+
+
+
+#sec2 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: 800px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,9 +189,59 @@ button:hover {
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 img {
     width: auto;
     max-height: 20rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+img:hover {
+    scale: 1.1;
+}
+
+
+#sec3 {
+    padding-top: 4rem;
+    height: 800px;
+    width: 100%;
+    background-color: rgb(12, 71, 107);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.combinaciones {
+    background-color: rgb(169, 155, 0);
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    border: 10px solid rgb(154, 101, 1);
+}
+
+select, option {
+    font-family: "Silkscreen", serif;
+    width: 5rem;
+    height: 3rem;
+    background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+option {
+    background-color: rgb(61, 2, 98);
+}
+
+i {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
 }

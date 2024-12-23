@@ -9,37 +9,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&family=Style+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Bienvenido</h1>
-    <section>
-        
+    <header>
+        <h1>Bienvenido</h1>
+        <nav>
+            <a href="#sec1">Parte I</a>
+            <a href="#sec2">Parte II</a>
+            <a href="#sec3">Parte III</a>
+        </nav>
+    </header>
+    <section id="sec1">
+        <h2>Parte I - Selecciona la imagen haciendo click!</h2>
+        <article>
+            <img src="assets/img/mario1.jpeg" alt="">
+            <img src="assets/img/mario2.png" alt="">
+        </article>
+        <p class="status">Status <span id="status">No seleccionado</span></p>
     </section>
-    <section class="sec1">
-        <h2>Selecciona hasta 10 stickers</h2>
-        <p class="parrafox">Te quedan: <span class="conteo">xxx</span> Stickers</p>
+    <section id="sec2">
+        <h2>Parte II - Selecciona hasta 10 stickers</h2>
+        <p class="parrafox2">Te quedan: <span class="conteo">xxx</span> Stickers</p>
         <p id="parrafo">Este es un ejemplo de párrafo.</p>
         <div class="stickers">
-            <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+            <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
                 <img src="assets/img/load.png" alt="">
                 <input type="number" min="0" max="10" class="load" placeholder="0"></input>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+            <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
                 <img src="assets/img/up.png" alt="">
                 <input type="number" min="0" max="10" placeholder="0" class="up"></input>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+            <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
                 <img src="assets/img/yes.png" alt="">
                 <input type="number" min="0" max="10" placeholder="0" class="yes"></input>
             </div>
         </div>
         <span style="margin-bottom: 2rem;">Mensaje de Verificación</span>
-        <button class="verificar">Verificar</button>
+        <button class="btn1">Verificar</button>
     </section>
-    <section class="sec2">
-        <h1>Elige hasta 10 stickers.</h1> 
-        <p>Te quedan:<span class="conteo">X2XX </span> Stickers</p>
-        <p id="parrafo">Este es un ejemplo de párrafo.</p>
+    <section id="sec3">
+        <h2>Parte III - Encuentra las combinaciones secretas.</h2>
+        <h1>Encuentra la combinación</h1> 
+        <div class="combinaciones">
+            <i class="fas fa-key"></i>
+            <select name="combi1" id="combi1">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <i class="fas fa-key"></i>
+            <select name="combi2" id="combi2">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <i class="fas fa-key"></i>
+            <select name="combi3" id="combi3">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <span id="respuesta" style="margin-bottom: 2rem;">Resultado</span>
+        <button class="btn2">Verificar</button>
     </section>
 
     <script src="assets/js/index.js"></script>

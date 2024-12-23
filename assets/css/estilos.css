@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: #ffffff;
+    width: 100%;
+    font-family: "Silkscreen", serif;
+    top: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    max-width: 600px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
+    text-shadow: 2px 2px 2px rgb(187, 114, 4);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+h2 {
+    text-shadow: 2px 2px 2px rgb(207, 1, 214);
+}
+
+input {
+    font-family: "Silkscreen", serif;
+    width: 5rem;
+    height: 3rem;
+    background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+button {
+    font-family: "Silkscreen", serif;
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out; 
+}
+
+button:hover {
+    background: linear-gradient(rgb(238, 197, 32), rgb(107, 35, 1));
+}
+
+.parrafox {
+    background: linear-gradient(rgb(165, 32, 98), rgb(61, 2, 98));
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.sec1 {
+    height: 800px;
+    width: 100%;
+    top: 10rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/waves_live.gif);
+    background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.stickers {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+img {
+    width: auto;
+    max-height: 20rem;
+}

@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: #ffffff;
     width: 100%;
+    height: 100vh;
     font-family: "Silkscreen", serif;
     top: 0;
     margin: 0;
@@ -9,7 +10,6 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
     position: fixed;
     flex-direction: column;
     justify-content: center;
-    height: 120px;
+    height: 100px;
     width: 100%;
     background-color: rgba(186, 123, 5, 0.901);
     margin: auto;
@@ -33,17 +33,26 @@ a {
 }
 
 h1 {
-    max-width: 600px;
-    padding: .3rem 2rem;
+    max-width: 10rem;
+    padding: .3rem 1rem;
     border-radius: 10px;
     background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
     text-shadow: 2px 2px 2px rgb(187, 114, 4);
     color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
+    font-size: 1.3rem;
 }
 
 h2 {
+    font-size: 1rem;
+    max-width: 20rem;
     text-shadow: 2px 2px 2px rgb(207, 1, 214);
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: .9rem;
 }
 
 input {
@@ -59,18 +68,20 @@ input {
 }
 
 .btn1 {
-    padding: .7rem 2rem;
+    margin-top: 1rem;
 }
 
 .btn1, .btn2 {
     font-family: "Silkscreen", serif;
-    width: 10rem;
+    max-width: 10rem;
     height: 3rem;
-    background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
+    background: linear-gradient(rgb(204, 0, 129), rgb(98, 2, 69));
     border-radius: 20px;
     color: rgb(255, 255, 255);
     font-size: 1rem;
     transition: all 0.2s ease-in-out; 
+    padding: .7rem 2rem;
+
 }
 
 button:hover {
@@ -85,7 +96,7 @@ button:hover {
     border-radius: 10px;
 }
 .status2 {
-    background: linear-gradient(rgb(134, 244, 50), rgb(0, 47, 0));
+    background: linear-gradient(rgb(68, 153, 2), rgb(0, 47, 0));
     color: rgb(255, 255, 255);
     padding: 1rem 2rem;
     border: 2px solid rgb(255, 255, 255);
@@ -95,26 +106,41 @@ button:hover {
 .parrafox2 {
     background: linear-gradient(rgb(165, 32, 98), rgb(61, 2, 98));
     color: rgb(255, 255, 255);
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
+    font-size: 1rem;
 }
 
+#parrafo {
+    text-justify: auto;
+    max-width: 15rem;
+    text-shadow: 2px 2px 2px rgb(207, 1, 214);
+}
+
+.verif {
+    background: linear-gradient(rgb(160, 109, 41), rgb(3, 144, 52));
+    padding: .8rem 2rem;
+    text-shadow: 2px 2px 2px rgb(255, 0, 170);
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
 
 #sec1 {
-    height: 800px;
+    height: 550px;
     width: 100%;
     margin-top: 150px;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 1rem;
 }
 
 article {
     position: relative;
-    width: 400px;
+    max-width: 15rem;
     transition: all .3s ease;
     display: flex;
     justify-content: center;
@@ -135,18 +161,20 @@ article img:first-child {
 
 article img:last-child {
     position: absolute;
-    width: 300px;
+    max-width: 11rem;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     transform: translateY(25%);
+    /* transform: translateY(25%); */
     transition: .3s ease;
     opacity: 0;
 }
 
 article:hover {
     transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+    /* transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0); */
 }
 
 article::before {
@@ -167,41 +195,40 @@ article:hover::before {
 article:hover img:last-child {
     opacity: 1;
     transform: translateY(10%);
-    
 }
 
-
-
 #sec2 {
-    padding-top: 4rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
-    height: 800px;
+    height: max-content;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-image: url(../img/waves_live.gif);
     background-attachment: fixed;
     object-fit: cover;
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
+    flex-direction: column;
 }
 
 .stickers {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
     margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 img {
     width: auto;
-    max-height: 20rem;
+    max-height: 15rem;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
@@ -212,35 +239,40 @@ img:hover {
 
 
 #sec3 {
-    padding-top: 4rem;
-    height: 800px;
+    padding-top: 2rem;
+    height: max-content;
     width: 100%;
     background-color: rgb(12, 71, 107);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    padding-bottom: 3rem;
+
 }
 
 .combinaciones {
     background-color: rgb(169, 155, 0);
-    width: 50%;
-    padding: 2rem;
+    width: max-content;
+    padding: 2rem 1rem;
     display: flex;
-    justify-content: space-evenly;
+    margin: 2rem 0;
+    justify-content: center;
     border-radius: 2rem;
+    gap: .8rem;
     border: 10px solid rgb(154, 101, 1);
 }
 
 #respuesta {
+    margin-top: 1rem;
     padding: .5rem;
 }
 
 
 select, option {
     font-family: "Silkscreen", serif;
-    width: 5rem;
+    width:4rem;
     height: 3rem;
+    text-align: center;
     background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
     border-radius: 20px;
     color: rgb(255, 255, 255);
@@ -253,12 +285,28 @@ option {
     background-color: rgb(61, 2, 98);
 }
 
-i {
+i { 
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    padding-top: 1rem !important;
+    text-align: center;
+    font-size: 1rem;
     background-color: rgb(5, 130, 207);
-    padding: .6rem;
+    padding: .5rem;
     border-radius: 1rem;
     border: 1px solid white;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    background-color: rgb(0, 123, 8);
+    scale: 1.2;
+    border: 5px solid white;
+}
+
+@media (min-width: 1200px) {
+    .stickers {
+        flex-direction: row;
+
+    }
 }

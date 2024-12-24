@@ -1,5 +1,4 @@
 /* Logica 1 */
-
 const imagen = document.querySelector('article');
 const seleccionado = document.getElementById('status');
 
@@ -20,7 +19,6 @@ imagen.addEventListener('click', function() {
         seleccionado.classList = "status";
     }
 });
-
 
 /* Logica 2 */
 const input1 = document.querySelector('.load');
@@ -62,7 +60,7 @@ input3.addEventListener('input', actualizarTotal);
 
 function suma(a, b, c) {
     const sumaTotal = Number(a.value) + Number(b.value) + Number(c.value);
-    if (sumaTotal > 9) {
+    if (sumaTotal > 10) {
         contador.classList = 'status';
     } else {
         contador.classList = 'parrafox2';
@@ -84,19 +82,34 @@ function verificar() {
     }
 }
 
-
-
 /* Logica 3 */
+const clave1 = document.querySelector('#combi1');
+const clave2 = document.querySelector('#combi2');
+const clave3 = document.querySelector('#combi3');
+let resultado = document.querySelector('#respuesta');
 
-// const clave1 = document.querySelector('#combi1');
-// const clave2 = document.querySelector('#combi2');
-// const clave3 = document.querySelector('#combi3');
+const pass1 = '911';
+const pass2 = '714';
+let digits = '';
 
-// clave1.addEventListener('clave', (e) => {
-//     return `${e.target.value}`});
+clave1.addEventListener('input', (e) => {
+    return `${e.target.value}`});
 
-// clave2.addEventListener('clave', (e) => {
-//     return `${e.target.value}`});
+clave2.addEventListener('input', (e) => {
+    return `${e.target.value}`});
 
-// clave3.addEventListener('clave', (e) => {
-//     return `${e.target.value}`});
+clave3.addEventListener('input', (e) => {
+    return `${e.target.value}`});
+
+function claveSecreta(a,b,c) {
+    digits = `${a.value}${b.value}${c.value}`;
+    if (digits === pass1) {
+        return (resultado.innerText = "password 1 correcto", resultado.style.backgroundColor = "green")
+    } else if (digits === pass2) {
+        return (resultado.innerText = "password 2 correcto", resultado.style.backgroundColor = "green")
+    } else {
+        return (resultado.innerText = "password incorrecto", resultado.style.backgroundColor = "red")
+    }
+}
+
+/* Muy feliiiiiiz */

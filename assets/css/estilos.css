@@ -232,6 +232,11 @@ img:hover {
     border: 10px solid rgb(154, 101, 1);
 }
 
+#respuesta {
+    padding: .5rem;
+}
+
+
 select, option {
     font-family: "Silkscreen", serif;
     width: 5rem;

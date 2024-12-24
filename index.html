@@ -53,7 +53,7 @@
         <h2>Parte III - Encuentra las combinaciones secretas.</h2>
         <h1>Encuentra la combinación</h1> 
         <div class="combinaciones">
-            <i class="fas fa-key"></i>
+            <i id="icon1" class="fas fa-key"></i>
             <select name="combi1" id="combi1">
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -66,7 +66,7 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
             </select>
-            <i class="fas fa-key"></i>
+            <i id="icon2" class="fas fa-key"></i>
             <select name="combi2" id="combi2">
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -79,7 +79,7 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
             </select>
-            <i class="fas fa-key"></i>
+            <i id="icon3" class="fas fa-key"></i>
             <select name="combi3" id="combi3">
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -93,11 +93,10 @@
                 <option value="9">9</option>
             </select>
         </div>
-        <span id="respuesta" style="margin-bottom: 2rem;">Resultado</span>
+        <span id="respuesta" style="margin-bottom: 2rem;">Verificar Combinación</span>
         <button class="btn2" onclick="claveSecreta(clave1, clave2, clave3)
 ">Verificar</button>
     </section>
-
     <script src="assets/js/index.js"></script>
 </body>
 </html>

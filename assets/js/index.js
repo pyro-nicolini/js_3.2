@@ -88,6 +88,11 @@ const clave2 = document.querySelector('#combi2');
 const clave3 = document.querySelector('#combi3');
 let resultado = document.querySelector('#respuesta');
 
+const icon1 = document.querySelector('#icon1');
+const icon2 = document.querySelector('#icon2');
+const icon3 = document.querySelector('#icon3');
+
+
 const pass1 = '911';
 const pass2 = '714';
 let digits = '';
@@ -111,5 +116,17 @@ function claveSecreta(a,b,c) {
         return (resultado.innerText = "password incorrecto", resultado.style.backgroundColor = "red")
     }
 }
+
+icon1.addEventListener('click', () => {
+    clave1.value = Number(clave1.value)+1;
+});
+
+icon2.addEventListener('click', () => {
+    clave2.value = Number(clave2.value)+1;
+});
+
+icon3.addEventListener('click', () => {
+    clave3.value = Number(clave3.value)+1;
+});
 
 /* Muy feliiiiiiz */

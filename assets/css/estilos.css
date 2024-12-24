@@ -256,4 +256,9 @@ option {
 i {
     color: rgb(255, 255, 255);
     font-size: 2rem;
+    background-color: rgb(5, 130, 207);
+    padding: .6rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    cursor: pointer;
 }

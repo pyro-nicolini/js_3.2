@@ -120,6 +120,12 @@ article {
     align-items: center;
 }
 
+.line {
+    border: 10px solid rgb(255, 255, 255);
+
+}
+
+
 article img:first-child {
     border-radius: 2rem;
     object-fit: cover;

@@ -30,24 +30,24 @@
     </section>
     <section id="sec2">
         <h2>Parte II - Selecciona hasta 10 stickers</h2>
-        <p class="parrafox2">Te quedan: <span class="conteo">xxx</span> Stickers</p>
         <p id="parrafo">Este es un ejemplo de párrafo.</p>
         <div class="stickers">
             <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
-                <img src="assets/img/load.png" alt="">
+                <img class="stick1" src="assets/img/load.png" alt="" onclick="input1.value=input1++">
                 <input type="number" min="0" max="10" class="load" placeholder="0"></input>
             </div>
             <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
-                <img src="assets/img/up.png" alt="">
+                <img class="stick2" src="assets/img/up.png" alt="">
                 <input type="number" min="0" max="10" placeholder="0" class="up"></input>
             </div>
             <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
-                <img src="assets/img/yes.png" alt="">
+                <img class="stick3" src="assets/img/yes.png" alt="">
                 <input type="number" min="0" max="10" placeholder="0" class="yes"></input>
             </div>
         </div>
-        <span style="margin-bottom: 2rem;">Mensaje de Verificación</span>
-        <button class="btn1">Verificar</button>
+        <p class="parrafox2">Stickers Seleccionados: <span class="conteo">xxx</span></p>
+        <span class="verif" style="margin-bottom: 2rem;">Mensaje de Verificación</span>
+        <button class="btn1" onclick="verificar(input1, input2, input3)">Verificar</button>
     </section>
     <section id="sec3">
         <h2>Parte III - Encuentra las combinaciones secretas.</h2>

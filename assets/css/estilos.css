@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    scroll-behavior: smooth;
 }
 
 header {

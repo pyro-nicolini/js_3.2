@@ -27,11 +27,29 @@ const input1 = document.querySelector('.load');
 const input2 = document.querySelector('.up');
 const input3 = document.querySelector('.yes');
 
+const stick1 = document.querySelector('.stick1');
+const stick2 = document.querySelector('.stick2');
+const stick3 = document.querySelector('.stick3');
+
+stick1.addEventListener('click', () => {
+        input1.value = Number(input1.value)+1;
+        input1.value, actualizarTotal();
+});
+
+stick2.addEventListener('click', () => {
+        input2.value = Number(input2.value)+1;
+        input2.value, actualizarTotal();
+});
+
+stick3.addEventListener('click', () => {
+        input3.value = Number(input3.value)+1;
+        input3.value, actualizarTotal();
+});
+
 let total = 0;
 
 let conteo = document.querySelector('.conteo');
 let contador = document.querySelector('.parrafox2');
-
 
 function actualizarTotal() {
     total = suma(input1, input2, input3);
@@ -58,13 +76,14 @@ function verificar() {
     if (total > 10) {
         mensaje.innerText = `No puedes llevar más de 10 stickers, debes restar ${total - 10} stickers`;
     } else if (total > 9) {
-        mensaje.innerText = `No puedes llevar más de 10 stickers`;
+        mensaje.innerText = `Puedes llevar hasta 10 stickers`;
     } else if (total > 0) {
         mensaje.innerText = `Estás llevando ${total} stickers`;
     } else {
         mensaje.innerText = "No has seleccionado stickers.";
     }
 }
+
 
 
 /* Logica 3 */

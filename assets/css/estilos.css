@@ -36,7 +36,7 @@ h1 {
     max-width: 10rem;
     padding: .3rem 1rem;
     border-radius: 10px;
-    background: linear-gradient(rgb(126, 0, 204), rgb(61, 2, 98));
+    background: linear-gradient(rgb(204, 0, 78), rgb(35, 0, 56));
     text-shadow: 2px 2px 2px rgb(187, 114, 4);
     color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
@@ -104,7 +104,7 @@ button:hover {
 }
 
 .parrafox2 {
-    background: linear-gradient(rgb(165, 32, 98), rgb(61, 2, 98));
+    background: linear-gradient(rgb(32, 83, 165), rgb(61, 2, 98));
     color: rgb(255, 255, 255);
     padding: 1rem 1rem;
     border: 2px solid rgb(255, 255, 255);
@@ -127,15 +127,19 @@ button:hover {
     font-size: 1.1rem;
 }
 
+#space {
+    padding-top: 6rem;
+}
+
 #sec1 {
-    height: 550px;
+    height: max-content;
     width: 100%;
-    margin-top: 150px;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding-bottom: 4rem;
 }
 
 article {
@@ -198,7 +202,7 @@ article:hover img:last-child {
 }
 
 #sec2 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding-top: 3rem;
     padding-bottom: 4rem;
     height: max-content;
@@ -239,14 +243,15 @@ img:hover {
 
 
 #sec3 {
-    padding-top: 2rem;
-    height: max-content;
+    margin-top: 2rem;
+    padding-top: 9rem;
+    height: 900px;
     width: 100%;
     background-color: rgb(12, 71, 107);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
 
 }
 

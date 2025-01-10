@@ -2,11 +2,11 @@
 const imagen = document.querySelector('article');
 const seleccionado = document.getElementById('status');
 
-let prap = '10px solid red';
+let prap = '2px solid red';
 let prop = 'none';
 
 imagen.style.border = prop;
-imagen.style.borderRadius = "10px";
+imagen.style.borderRadius = "2px";
 
 imagen.addEventListener('click', function() {
     if (imagen.style.border != prap) {

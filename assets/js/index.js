@@ -72,13 +72,13 @@ let mensaje = document.querySelector('.verif');
 
 function verificar() {
     if (total > 10) {
-        mensaje.innerText = `No puedes llevar más de 10 stickers, debes restar ${total - 10} stickers`;
+        mensaje.innerText = `Llevas demasiados Stickers. debes restar ${total - 10} stickers`;
     } else if (total > 9) {
-        mensaje.innerText = `Puedes llevar hasta 10 stickers`;
+        mensaje.innerText = `Estás llevando ${total} stickers. Haz llegado al máximo permitido.`;
     } else if (total > 0) {
         mensaje.innerText = `Estás llevando ${total} stickers`;
     } else {
-        mensaje.innerText = "No has seleccionado stickers.";
+        mensaje.innerText = "No haz seleccionado stickers.";
     }
 }
 
